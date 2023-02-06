@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 :root{
   --main-color:#040405
-  --detail-color:#FF3A5E
+ color--detail-color:#FF3A5E
   --detail-color2:#06d2da
 }
 * {
@@ -11,7 +11,8 @@
   text-decoration: none;
 }
 body{
-  background-color: var(--main-color);
+  background-color: #040405;
+  color: lightgrey ;
 }
 header{
   font-family: 'Righteous', cursive;
@@ -25,9 +26,9 @@ font-family: 'Righteous', cursive;
 font-family: 'Sarala', sans-serif;
  */
 a{
-  color: #ffffff;
-  background: linear-gradient(270deg, #ff3a5e 0%, #17161d 100%);
-
+  /* color: #ffffff; */
+  /* border-bottom: solid 2px linear-gradient(270deg, #ff3a5e 0%, #17161d 100%) ; */
+  color: lightgray;
 }
 nav{
   display: flex;
