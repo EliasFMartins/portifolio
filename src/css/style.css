@@ -10,6 +10,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+@keyframes move{
+  0%{top: -20px;}
+  50%{top: 30px;}
+  100%{top: -20px;}
+}
 body{
   background-color: #040405;
   color: lightgrey ;
@@ -44,6 +49,7 @@ img{
   margin: 0 auto;
 }
 .logo{
+  position: relative;
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -51,4 +57,7 @@ img{
   height: 120px;
   border-radius: 50%;
   z-index: 5;
+  animation: move linear 3s infinite ;
+  
+  
 }
