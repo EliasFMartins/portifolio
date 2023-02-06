@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+/* 
+font-family: 'Righteous', cursive;
+font-family: 'Sarala', sans-serif;
+ */
 :root{
   --main-color:#040405
- color--detail-color:#FF3A5E
+  --detail-color:#FF3A5E
   --detail-color2:#06d2da
 }
 * {
@@ -12,8 +16,18 @@
 }
 @keyframes move{
   0%{top: -20px;}
-  50%{top: 30px;}
+  50%{top: 10px;}
   100%{top: -20px;}
+}
+@keyframes animate{
+  and{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+@keyframes bordas{
+  0%{border-top: solid 5px #06d2da ;transform: rotate(90deg);}
+  25%{border-right: 5px solid #06d2da;transform: rotate(180deg)}
+  50%{border-bottom: 5px solid #06d2da;transform: rotate(240deg)}
+  75%{border-left: 5px solid #06d2da;transform: rotate(360deg)}
 }
 body{
   background-color: #040405;
@@ -25,23 +39,39 @@ header{
   align-items: center;
   justify-content: space-around;
   padding: 24px;
+  /* margin-bottom: 30px; */
 }
-/* 
-font-family: 'Righteous', cursive;
-font-family: 'Sarala', sans-serif;
- */
 a{
-   /* border-bottom:linear-gradient(270deg, #ff3a5e 0%, #17161d 100%) ;  */
+  font-size: 1.5rem;
+  /* background-color: red; */
+  padding: 5px;
+   /*  ;  */
    border-bottom: solid 1px #06d3da00;
   color: lightgray;
-  transition: 1s;
+ 
 }
-a:hover{
-  border-bottom: solid 1px #06d2da;
+nav a {
+position: relative;
 }
+
 nav{
   display: flex;
   gap: 32px;
+}
+nav a::after{
+  margin-top: 20px;
+  transition: 0.5s ease-in-out;;
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(270deg, #09a89b 0%, #17161d 100%);
+  /* background-color: white; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+nav a:hover::after{
+  width: 100%;
 }
 img{
   width: 84px;
@@ -58,6 +88,47 @@ img{
   border-radius: 50%;
   z-index: 5;
   animation: move linear 3s infinite ;
-  
-  
+  /* animation: bordas linear 2s infinite; */
+}
+.inicio{
+  position: relative;
+  margin: 20px;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #040405;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.inicio::before{
+  content: " ";
+  position: absolute;
+  width: 350px;
+  height: 140%;
+  background:linear-gradient(#15c0b7,red) ;
+  animation: animate 2s  linear infinite;
+}
+.inicio::after{
+  content: ' ';
+  position: absolute;
+  inset: 2px;
+  background: #333;
+  border-radius: 15px;
+}
+.inicio h2{
+  position: relative;
+  color: white;
+  font-size: 8em;
+  z-index: 10;
+}
+
+main{
+  border-top: solid 0.1px lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
 }
