@@ -26,11 +26,29 @@ font-family: 'Righteous', cursive;
 font-family: 'Sarala', sans-serif;
  */
 a{
-  /* color: #ffffff; */
-  /* border-bottom: solid 2px linear-gradient(270deg, #ff3a5e 0%, #17161d 100%) ; */
+   /* border-bottom:linear-gradient(270deg, #ff3a5e 0%, #17161d 100%) ;  */
+   border-bottom: solid 1px #06d3da00;
   color: lightgray;
+  transition: 1s;
+}
+a:hover{
+  border-bottom: solid 1px #06d2da;
 }
 nav{
   display: flex;
   gap: 32px;
+}
+img{
+  width: 84px;
+  display: block;
+  margin: 0 auto;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  z-index: 5;
 }
