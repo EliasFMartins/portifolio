@@ -62,7 +62,7 @@ nav a::after{
   transition: 0.5s ease-in-out;;
   content: " ";
   width: 0%;
-  height: 2px;
+  height: 4px;
   background: linear-gradient(270deg, #09a89b 0%, #17161d 100%);
   position: absolute;
   bottom: 0;
@@ -82,10 +82,78 @@ nav a:hover::after{
   z-index: 5;
   animation: move linear 3s infinite ;
 }
-
+button.mobile {
+  visibility: hidden;
+}
+button.mobile {
+  border: transparent;
+  transition: 2ms ease-in;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  width: 55px;
+  background-color: red;
+  height: 60px;
+  color: #17161d;
+  background-color: transparent;
+}
+hr{
+  margin-top: 10px;
+  width: 50px;
+}
 
 
 /* queries */
-@media(max-width:850px){
+@media (max-width:850px){
+  .logo{
+    margin-top: 5px;
+    
+    border: solid 1px ;
+    box-shadow:  2px 1px gray ;
+    padding: 1%;
+  }
+.nav{
+  display: block;
+  visibility: hidden;
+}
+.nav.hidden{
+  display: flex;
+}
+  button.mobile {
+    visibility: visible;
+  }
+  .nav.hidden{margin-top: 580px;
+    visibility: visible;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
 
+  button.mobile hr {
+    transition: 2s;
+    background: linear-gradient(270deg, #09a89b 0%, #17161d 100%);
+    padding: 5%;
+    border-radius: 5px;
+  }
+  button.mobile.active hr.hr1 {
+    transform: rotate(405deg);
+    position: relative;
+    bottom: -18px;
+  }
+  button.mobile.active hr.hr2 {
+    background: transparent;
+    border: transparent;
+  }
+  button.mobile.active hr.hr3 {
+    transform: rotate(-405deg);
+    position: relative;
+    top: -15px;
+  }
+
+}
+.pag{
+  height: 100vh;
 }
