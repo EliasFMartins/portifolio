@@ -8,6 +8,7 @@ font-family: 'Sarala', sans-serif;
   --detail-color:#FF3A5E
   --detail-color2:#06d2da
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +33,7 @@ font-family: 'Sarala', sans-serif;
 body{
   background-color: #040405;
   color: lightgrey ;
+  scroll-behavior: smooth;
 }
 header{
   font-family: 'Righteous', cursive;
@@ -90,6 +92,9 @@ img{
   animation: move linear 3s infinite ;
   /* animation: bordas linear 2s infinite; */
 }
+.inicio,.quemsou,.conhecimentos,.projetos{
+  visibility: hidden;
+}
 .inicio{
   position: relative;
   margin: 20px;
@@ -128,7 +133,22 @@ img{
 main{
   border-top: solid 0.1px lightgray;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #333;
+  height: auto;
+}
+.quemsoueu{
+min-width: 100vh;
+}
+.projetos{
+  min-width: 100vh;
+}
+.conhecimentos{
+  min-width: 100vh;
+}
+div.tamanho{
+  height: 100vh;
+  background: red;
 }
