@@ -4,9 +4,9 @@ font-family: 'Righteous', cursive;
 font-family: 'Sarala', sans-serif;
  */
 :root{
-  --main-color:#040405
-  --detail-color:#FF3A5E
-  --detail-color2:#06d2da
+  --main-color:#040405;
+  --detail-color:#FF3A5E;
+  --detail-color2:#06d2da;
 }
 
 
@@ -101,21 +101,23 @@ img{
   visibility: hidden;
 }
 .inicio{
+  background-color: red;
   position: relative;
   margin: 20px;
-  width: 500px;
-  height: 600px;
+  width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #040405;
   border-radius: 15px;
   overflow: hidden;
+  z-index: 90000;
 }
 .inicio::before{
   content: " ";
   position: absolute;
-  width: 350px;
+  width: 100%;
   height: 140%;
   background:linear-gradient(#15c0b7,red) ;
   animation: animate 2s  linear infinite;
@@ -188,12 +190,6 @@ gap: 5px;
 .type2{
   animation: pisca 1s steps(40) normal infinite  ,typing 4s steps(40) 8.9s normal both ;
 }
-.imagen{
-width: 50%;
-height: 60%;
-background: red;
-z-index: 50;
-}
 
 .projetos{
   min-width: 100vw;
@@ -201,7 +197,7 @@ z-index: 50;
 .conhecimentos{
   min-width: 100vw;
 }
-.section{
+section{
   height: 100vh;
   width: 100%;
   background: linear-gradient(blue,gray );

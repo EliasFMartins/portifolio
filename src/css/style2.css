@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+/* font-family: 'Righteous', cursive;
+font-family: 'Sarala', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* keyframes */
+@keyframes move{
+  0%{top: -20px;}
+  50%{top: 10px;}
+  100%{top: -20px;}
+}
+@keyframes animate{
+  and{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+@keyframes bordas{
+  0%{border-top: solid 5px #06d2da ;transform: rotate(90deg);}
+  25%{border-right: 5px solid #06d2da;transform: rotate(180deg)}
+  50%{border-bottom: 5px solid #06d2da;transform: rotate(240deg)}
+  75%{border-left: 5px solid #06d2da;transform: rotate(360deg)}
+}
+@keyframes typing {
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes pisca {
+  from { border-right-color:white}
+  to {border-right-color: transparent}
+}
+/*  keyframes */
+header{
+  font-family: 'Righteous', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+.logo img{
+  width: 84px;
+  display: block;
+  margin: 0 auto;
+}
+a{
+  font-size: 1.5rem;
+  padding: 5px;
+  border-bottom: solid 1px #06d3da00;
+  color: lightgray;
+}
+nav a {
+  position: relative;
+}  
+nav{
+  display: flex;
+  gap: 32px;
+}
+nav a::after{
+  margin-top: 20px;
+  transition: 0.5s ease-in-out;;
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(270deg, #09a89b 0%, #17161d 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+nav a:hover::after{
+  width: 100%;
+}
+.logo{
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  z-index: 5;
+  animation: move linear 3s infinite ;
+}
+
+
+
+/* queries */
+@media(max-width:850px){
+
+}
