@@ -124,7 +124,7 @@ img{
   content: ' ';
   position: absolute;
   inset: 2px;
-  background: #333;
+  background: black;
   border-radius: 15px;
 }
 .inicio h2{
@@ -136,12 +136,12 @@ img{
   
 }
 main{
-  border-top: solid 0.1px lightgray;
+  /* border-top: solid 0.1px lightgray; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #333;
+  
   height: auto;
 }
 .quemsou{
@@ -153,31 +153,23 @@ justify-content: center;
 gap: 5px;
 }
 .texto{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  display: inline;
+  align-items: center;
   z-index: 10;
   gap: 5px;
 }
 .linha1{
   margin: 5px;
-  display: inline;
-  /* width: 220px; */
-  /* width: 50%; */
 }.linha2{
-  display: inline;
   margin: 5px;
-  /* width:330px; */
-  /* max-width: 75%; */
 }.linha3{
   display: inline;
   margin: 5px;
   width:auto;
-  
 }
 .line{
-  padding: 5px;
-  display: inline;
+  display: table-caption;
   border-right: 2px solid white;
   color: lightgray;
   font-size: 3em;
@@ -188,15 +180,20 @@ gap: 5px;
   
 }
 .type {
-  animation: pisca 800ms steps(40) normal infinite  ,typing 4s steps(40) normal both ;
+  animation: pisca 1s steps(40) normal infinite  ,typing 4s steps(40) normal  both ;
   /* steps quebram a animação quadro a quadro */
 }.type1{
-  animation: pisca 800ms steps(40) normal infinite  ,typing 4s steps(40) 1.9s normal both ;
+  animation: pisca 1s steps(40) normal infinite  ,typing 4s steps(40) 4.6s normal both ;
 }
 .type2{
-  animation: pisca 800ms steps(40) normal infinite  ,typing 4s steps(40) 2.5s normal both ;
+  animation: pisca 1s steps(40) normal infinite  ,typing 4s steps(40) 8.9s normal both ;
 }
-
+.imagen{
+width: 50%;
+height: 60%;
+background: red;
+z-index: 50;
+}
 
 .projetos{
   min-width: 100vw;
@@ -204,4 +201,8 @@ gap: 5px;
 .conhecimentos{
   min-width: 100vw;
 }
-
+.section{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(blue,gray );
+}
