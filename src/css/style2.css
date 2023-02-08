@@ -7,6 +7,11 @@ font-family: 'Sarala', sans-serif; */
   box-sizing: border-box;
   text-decoration: none;
 }
+:root{
+  --main-color:#040405;
+  --detail-color:#FF3A5E;
+  --detail-color2:#06d2da;
+}
 /* keyframes */
 @keyframes move{
   0%{top: -20px;}
@@ -95,7 +100,7 @@ hr{
   width: 50px;
 }
 body{
-  color: ;
+  color: var(--main-color);
 }
 
 /* queries */
