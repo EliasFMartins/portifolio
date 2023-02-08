@@ -36,8 +36,9 @@ header{
   font-family: 'Righteous', cursive;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 24px;
+  justify-content: space-between;
+  padding: 1rem;
+  /* position: fixed; */
 }
 .logo img{
   width: 84px;
@@ -52,10 +53,13 @@ a{
 }
 nav a {
   position: relative;
-}  
+  display: block;
+  padding: .5rem;
+} 
+
 nav{
   display: flex;
-  gap: 32px;
+  gap: .5rem;
 }
 nav a::after{
   margin-top: 20px;
@@ -82,55 +86,65 @@ nav a:hover::after{
   z-index: 5;
   animation: move linear 3s infinite ;
 }
-button.mobile {
-  visibility: hidden;
+.mobile{
+  display: none;
 }
-button.mobile {
-  border: transparent;
-  transition: 2ms ease-in;
-  position: absolute;
-  top: 50px;
-  right: 25px;
-  width: 55px;
-  background-color: red;
-  height: 60px;
-  color: #17161d;
-  background-color: transparent;
-}
+
 hr{
   margin-top: 10px;
   width: 50px;
 }
-
+body{
+  color: ;
+}
 
 /* queries */
 @media (max-width:850px){
+
   .logo{
     margin-top: 5px;
-    
     border: solid 1px ;
     box-shadow:  2px 1px gray ;
     padding: 1%;
   }
-.nav{
-  display: block;
-  visibility: hidden;
-}
-.nav.hidden{
-  display: flex;
-}
-  button.mobile {
-    visibility: visible;
+  .mobile{
+    display: block;
+    border: transparent;
+    background-color: transparent;
   }
-  .nav.hidden{margin-top: 580px;
-    visibility: visible;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+  nav{
+    /* display: none; */
+    visibility: hidden;
+    display: flex;
     position: fixed;
+    width: 100%;
+    top: 180px;
+    right: 0px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    transition: 2s;
+    height: 0;
+    overflow-y: hidden;
+    
   }
+  nav.active {
+    visibility: visible;
+    display: flex;
+    height: 100vh;
+    /* background-color: red; */
+    /* overflow-y: auto; */
+  }
+ 
+  nav a {
+    padding: 1rem 0 ;
+   border-bottom: 2px solid ;
+  }
+
+
+  
+  
+ 
 
   button.mobile hr {
     transition: 2s;

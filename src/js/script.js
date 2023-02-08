@@ -4,23 +4,12 @@ const inicio = document.querySelector(".inicioo")
 const quem = document.querySelector(".quem")
 const projetos = document.querySelector(".projeto")
 const conhecimento = document.querySelector(".conhecimento")
-btn.addEventListener("click", (e) => {
-  btn.classList.toggle("active");
-  nav.classList.toggle("hidden");
-});
-inicio.addEventListener("click", e=> 
-{btn.classList.toggle("active");
-nav.classList.toggle("hidden");})
- quem.addEventListener("click", e=> 
- {btn.classList.toggle("active");
- nav.classList.toggle("hidden");})
- projetos.addEventListener("click", e=> 
- {btn.classList.toggle("active");
- nav.classList.toggle("hidden");})
- conhecimento.addEventListener("click",e=> 
- {btn.classList.toggle("active");
- nav.classList.toggle("hidden");})
- 
+
+btn.addEventListener('click', toogleMenu);
+function  toogleMenu (){
+  nav.classList.toggle('active');
+  btn.classList.toggle('active');
+}
  
  
 window.sr = ScrollReveal({reset:true});
