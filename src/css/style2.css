@@ -208,6 +208,8 @@ main{
 height: 40vh;
 display: flex;
 justify-content: space-around;
+gap: 1rem;
+margin: 10px;
 }
 .html{
   width: 20%;
@@ -227,6 +229,9 @@ justify-content: space-around;
 }
 .icone{
 width: 100%;
+}
+.skill{
+  border: solid 2px var(--detail-color);
 }
 /* queries */
 @media (max-width:850px){
