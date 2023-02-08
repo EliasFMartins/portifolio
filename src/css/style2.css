@@ -204,26 +204,26 @@ main{
   /* align-items: center; */
 }
 .conhecimentos{
-background-color: red;
+/* background-color: red; */
 height: 40vh;
 display: flex;
 justify-content: space-around;
 }
 .html{
   width: 20%;
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
 }
 .css{
   width: 20%;
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
 }
 .js{
   width: 20%;
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
 }
 .git{
   width: 20%;
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
 }
 .icone{
 width: 100%;
