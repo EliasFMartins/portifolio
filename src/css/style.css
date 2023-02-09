@@ -149,7 +149,6 @@ nav a:hover::after {
   justify-content: space-between;
   /* background: #09a89b; */
   width: 80%;
-  padding: 2%;
 }
 
 .logo {
@@ -182,8 +181,7 @@ body {
 }
 
 .neon {
-  
-  padding: 2% ;
+  padding: 5% ;
   padding-bottom: 5%;
   position: relative;
   height: auto;
@@ -319,7 +317,7 @@ h1 {
   height: auto;
   transition: 1.6s;
   border: solid transparent 2px;
-  gap: 12rem;
+  gap: 1rem;
 }
 
 .skill{
@@ -354,6 +352,7 @@ h1 {
 .cards:hover p,.cards:hover h2{
   color: #FF3A5E;
 }
+
 .primeironeon{
   margin-top: 50px;
 }
@@ -374,7 +373,9 @@ p,h2{
 
 /* queries */
 @media (max-width:850px) {
-
+  .vazia{
+    height: 30vh;
+  }
 
  
 
@@ -386,27 +387,24 @@ p,h2{
 
 
   nav {
-    /* display: none; */
+   
     visibility: hidden;
     display: flex;
-
+    position: fixed;
     width: 100%;
-    top: 180px;
     right: 0px;
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     transition: 2s;
     height: 0;
     overflow-y: hidden;
-
+    top: 180;
   }
 
   nav.active {
-
+    top: 180;
     visibility: visible;
     display: flex;
-    top: 0;
     height: 100vh;
     align-items: center;
     justify-content: center;
