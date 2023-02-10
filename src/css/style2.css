@@ -82,6 +82,7 @@ font-family: 'Sarala', sans-serif; */
   }
 }
 
+
 /*  keyframes */
 header {
   font-family: 'Righteous', cursive;
@@ -133,20 +134,22 @@ nav a:hover::after {
   width: 100%;
 }
 .menulink{
-  color: #FF3A5E;
-  /* background-color: red; */
+  color: gray;
+
   border-radius: 12px;
   padding: 5px 45px;
-  border: solid 2px var(--detail-color);
+  border: solid 2px gray;
   transition: 1.2s;
 }
 .menulink:hover{
+  color: var(--detail-color);
+  border: var(--detail-color) solid 2px ;
   scale: 1.1;
 }
 .flex{
   margin-top: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* background: #09a89b; */
   width: 80%;
 }
@@ -173,16 +176,20 @@ hr {
 
 body {
   background: var(--main-color);
+ 
   scroll-behavior: smooth;
 }
 
 .inicio.quemsou.conhecimentos.projetos {
   visibility: hidden;
 }
-
+h3{
+  z-index: 5000000;
+  color: #06d2da;
+}
 .neon {
   padding: 2% ;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   position: relative;
   height: auto;
   background-color: #040405;
@@ -219,6 +226,10 @@ body {
 }
 
 .imagem-inicio {
+  transition: 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
   min-width: 500px;
   width: 45vw;
@@ -227,6 +238,7 @@ body {
 }
 
 .texto-inicio {
+  transition: 2s;
   display: flex;
   flex-direction: column;
   /* padding: 5px; */
@@ -284,8 +296,8 @@ body {
 }
 
 .fotodev {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   border-radius: 15px;
   transition: 1.2s;
 }
@@ -376,7 +388,12 @@ p,h2{
   .vazia{
     height: 30vh;
   }
-
+  .texto-inicio{
+    width: 70vw;
+  }
+  .imagem-inicio{
+    width: 70vw;
+  }
  
 
   .mobile {
