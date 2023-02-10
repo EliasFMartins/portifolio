@@ -99,7 +99,7 @@ header {
   margin: 0 auto;
 } */
 
-a {
+nav a {
   font-size: 1.5rem;
   padding: 5px;
   border-bottom: solid 1px #06d3da00;
@@ -133,27 +133,32 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
-.menulink{
-  color: gray;
 
+.flex{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+a.btn-inicio{
+  margin-top: 40px;
+  padding: 10%;
   border-radius: 12px;
-  padding: 5px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
   border: solid 2px gray;
   transition: 1.2s;
 }
-.menulink:hover{
-  color: var(--detail-color);
-  border: var(--detail-color) solid 2px ;
-  scale: 1.1;
+a.btn-inicio:hover{
+  border: solid 2px var(--detail-color);
+  scale: 1.2;
 }
-.flex{
-  margin-top: 80px;
-  display: flex;
-  justify-content: space-evenly;
-  /* background: #09a89b; */
-  width: 80%;
+img.btn-inicio{
+  width: 50px;
+  height: 50px;
 }
-
 .logo {
   margin-top: 30px;
   color: lightgray;
@@ -201,7 +206,7 @@ h3{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 20px;
+  
 }
 
 .neon::before {
@@ -209,7 +214,7 @@ h3{
   position: absolute;
   width: 100%;
   height: 140%;
-  background: linear-gradient(transparent,#FF3A5E, transparent);
+  background: linear-gradient(transparent,transparent,transparent,#FF3A5E);
   animation: animate 2s linear infinite;
 }
 
@@ -226,6 +231,7 @@ h3{
 }
 
 .imagem-inicio {
+  margin: 5px ;
   transition: 2s;
   display: flex;
   align-items: center;
@@ -379,7 +385,28 @@ p,h2{
   justify-content: space-around;
   gap: 1rem;
 }
-
+.projetos{
+  padding: 5%;
+  background-color: red;
+  margin-top: 60px;
+  color: lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+.projetos1{
+  gap: 1rem;
+  height: 40%;
+  display: flex;
+  background: #09a89b;
+}
+.projetos2{
+  gap: 1rem;
+  height: 40%;
+  background: #17161d;
+  display: flex;
+}
 
 
 
@@ -392,6 +419,7 @@ p,h2{
     width: 70vw;
   }
   .imagem-inicio{
+    margin-top: 13px;
     width: 70vw;
   }
  
