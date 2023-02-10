@@ -188,10 +188,7 @@ body {
 .inicio.quemsou.conhecimentos.projetos {
   visibility: hidden;
 }
-h3{
-  /* z-index: 5000000; */
-  /* color: var(--detail-color2); */
-}
+
 .neon {
   padding: 2% ;
   padding-bottom: 2%;
@@ -421,7 +418,7 @@ p,h2{
   align-items: center;
   align-items: center;
   min-width: 340px;
-  min-height: 240px;
+  min-height: 290px;
   width: 30%;
   height: 100%;
   padding: 2%;
