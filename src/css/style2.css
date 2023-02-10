@@ -124,7 +124,7 @@ nav a::after {
   content: " ";
   width: 0%;
   height: 4px;
-  background: linear-gradient(270deg, #09a89b 0%, #17161d 100%);
+  background: linear-gradient(270deg,var(--detail-color) 0%, #17161d 100%);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -181,7 +181,7 @@ hr {
 
 body {
   background: var(--main-color);
- 
+  font-family: 'Righteous', cursive;
   scroll-behavior: smooth;
 }
 
@@ -189,8 +189,8 @@ body {
   visibility: hidden;
 }
 h3{
-  z-index: 5000000;
-  color: #06d2da;
+  /* z-index: 5000000; */
+  /* color: var(--detail-color2); */
 }
 .neon {
   padding: 2% ;
@@ -200,7 +200,7 @@ h3{
   background-color: #040405;
   border-radius: 15px;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 50px auto;
   flex-wrap: wrap;
   width: 95vw;
   display: flex;
@@ -214,7 +214,7 @@ h3{
   position: absolute;
   width: 100%;
   height: 140%;
-  background: linear-gradient(transparent,transparent,transparent,#FF3A5E);
+  background: linear-gradient(var(--detail-color),var(--detail-color2));
   animation: animate 2s linear infinite;
 }
 
@@ -252,7 +252,7 @@ h3{
   font-size: 18px;
   font-family: 'Sarala', sans-serif;
   min-width: 500px;
-  color: white;
+  color: lightgray;
   width: 45vw;
   z-index: 10;
 
@@ -264,7 +264,7 @@ h3{
 
 .line {
   display: table-caption;
-  border-right: 2px solid white;
+  border-right: 2px solid lightgray;
   color: lightgray;
   font-size: 1.5em;
   margin: 0 auto;
@@ -280,13 +280,18 @@ h3{
   height: auto;
   
 }
+.titulo{
+  color: var(--detail-color);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
 .type {
   animation: pisca 1s steps(40) normal infinite, typing 2s steps(40) normal both;
   /* steps quebram a animação quadro a quadro */
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #FF3A5E;
+  color: var(--detail-color);
   
 }
 
@@ -311,7 +316,7 @@ h3{
   scale: 1.1;
 }
 span{
-  color: #FF3A5E;
+  color: var(--detail-color);
 }
 main {
   display: flex;
@@ -355,7 +360,7 @@ h1 {
   scale: 1.3;
 }
 .textocards {
-  color: white;
+  color: lightgray;
   width: 50%;
   height: 100%;
   min-height: 200px;
@@ -387,28 +392,61 @@ p,h2{
 }
 .projetos{
   padding: 5%;
-  background-color: red;
   margin-top: 60px;
   color: lightgray;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  align-items: center;
+  height: auto;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .projetos1{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   height: 40%;
   display: flex;
-  background: #09a89b;
+  /* background: #09a89b; */
 }
-.projetos2{
-  gap: 1rem;
-  height: 40%;
-  background: #17161d;
+
+.projetoss{
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: center;
+  min-width: 340px;
+  min-height: 240px;
+  width: 30%;
+  height: 100%;
+  padding: 2%;
+  background: #040405;
+  border: solid 2px var(--detail-color);
+  transition: 1.2s;
+
+}
+.projetoss p{
+  margin: 10px;
+}
+.projetoss:hover {
+  scale: 1.1;
 }
 
-
+footer{
+  /* height: 30vh; */
+  color: azure;
+  /* display: block; */
+  /* margin: 0 auto */
+}
+div.rodape{
+  background-color: #06d2da;
+  text-align: center;
+}
 
 /* queries */
 @media (max-width:850px) {

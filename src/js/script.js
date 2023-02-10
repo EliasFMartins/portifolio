@@ -14,11 +14,10 @@ function  toogleMenu (){
  
 window.sr = ScrollReveal({reset:true});
 
-sr.reveal('.inicio', { rotate:{ x:0, y:80,z:0},duration: 3000});
-sr.reveal('.quemsou', { rotate:{ x:0, y:80,z:0},duration: 3000});
-sr.reveal('.conhecimentos', { rotate:{ x:0, y:0,z:0},duration: 3000});
-sr.reveal('.projetos',  { rotate:{ x:0, y:80,z:0},duration: 3000});
-soma = (a) =>{
+sr.reveal('.neon', { duration: 3000});
+// sr.reveal('.quemsou', { rotate:{ x:0, y:80,z:0},duration: 3000});
+sr.reveal('.cards', { duration: 3000});
+sr.reveal('.projetoss', { duration: 3000});
 
-}
+
 
