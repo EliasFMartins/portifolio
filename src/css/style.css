@@ -7,6 +7,7 @@ font-family: 'Sarala', sans-serif; */
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
