@@ -187,11 +187,11 @@ body {
 }
 
 .inicio.quemsou.conhecimentos.projetos {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
-h3{
-  /* z-index: 5000000; */
-  /* color: var(--detail-color2); */
+.projetos{
+  display: flex;
+  gap: 4rem;
 }
 .neon {
   padding: 2% ;
@@ -340,7 +340,8 @@ h1 {
   height: auto;
   transition: 1.6s;
   border: solid transparent 2px;
-  gap: 1rem;
+  gap: 2rem;
+  
 }
 
 .skill{
@@ -482,17 +483,17 @@ div.rodape{
     transition: 2s;
     height: 0;
     overflow-y: hidden;
-    top: 180;
+    top: 0;
   }
 
   nav.active {
-    top: 180;
+   top: 0;
     visibility: visible;
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: red;
+   
     background: #040405;
     /* overflow-y: auto; */
     z-index: 50;
