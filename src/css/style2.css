@@ -12,7 +12,9 @@ font-family: 'Sarala', sans-serif; */
 
 :root {
   --main-color: #040405;
+
   --detail-color: #FF3A5E;
+  --detail-color:  #06d2da;
   --detail-color2: #06d2da;
 }
 
@@ -120,11 +122,10 @@ nav {
 
 nav a::after {
   margin-top: 20px;
-  transition: 0.5s ease-in-out;
-  ;
+  transition: 0.5s ease-in-out;;
   content: " ";
   width: 0%;
-  height: 4px;
+  height: 2px;
   background: linear-gradient(270deg,var(--detail-color) 0%, #17161d 100%);
   position: absolute;
   bottom: 0;
@@ -187,7 +188,7 @@ body {
 }
 
 .inicio.quemsou.conhecimentos.projetos {
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 .projetos{
   display: flex;
@@ -195,7 +196,6 @@ body {
 }
 .neon {
   padding: 2% ;
-
   position: relative;
   height: auto;
   background-color: #040405;
@@ -238,7 +238,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 5px;
- 
   width: 45vw;
   height: auto;
   z-index: 10;
@@ -251,7 +250,6 @@ body {
   align-items: center;
   font-size: 18px;
   font-family: 'Sarala', sans-serif;
-  /* min-width: 500px; */
   color: lightgray;
   width: 45vw;
   z-index: 10;
@@ -374,7 +372,7 @@ h1 {
   scale: 1.2;
 }
 .cards:hover p,.cards:hover h2{
-  color: #FF3A5E;
+  color: var(--detail-color);
 }
 
 .primeironeon{
@@ -412,7 +410,6 @@ p,h2{
   gap: 1rem;
   height: 40%;
   display: flex;
-  /* background: #09a89b; */
 }
 
 .projetoss{
@@ -472,34 +469,36 @@ div.rodape{
 
 
   nav {
-   
+
     visibility: hidden;
     display: flex;
     position: fixed;
     width: 100%;
+ 
     right: 0px;
     flex-direction: column;
     align-items: center;
     transition: 2s;
     height: 0;
     overflow-y: hidden;
-    top: 0;
+    top:0;
+    /* bottom: 0; */
   }
 
   nav.active {
-   top: 0;
+    position: fixed;
+    top: 0;
     visibility: visible;
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-   
     background: #040405;
-    /* overflow-y: auto; */
     z-index: 50;
   }
 
   nav a {
+    
     padding: 1rem 0;
     border-bottom: 2px solid;
   }
@@ -518,7 +517,7 @@ div.rodape{
 
   button.mobile hr {
     transition: 2s;
-    background: linear-gradient(270deg, #09a89b 0%, #17161d 100%);
+    background: linear-gradient(270deg, var(--detail-color)0%, #17161d 100%);
     padding: 5%;
     border-radius: 5px;
   }

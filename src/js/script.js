@@ -10,7 +10,19 @@ function  toogleMenu (){
   nav.classList.toggle('active');
   btn.classList.toggle('active');
 }
- 
+inicio.addEventListener('click', remove)
+quem.addEventListener('click', remove)
+projetos.addEventListener('click', remove)
+conhecimento.addEventListener('click', remove)
+function remove (){
+  nav.classList.remove('active');
+  btn.classList.remove('active')
+}
+function att(){
+  if(window.screen.availWidth > 850){
+    console.log('foi')
+  }
+}
  
 window.sr = ScrollReveal({reset:true});
 
@@ -19,5 +31,9 @@ sr.reveal('.neon', { duration: 3000});
 sr.reveal('.cards', { duration: 3000});
 sr.reveal('.projetoss', { duration: 3000});
 
-
+function chama(){
+  console.log(window.screen.availWidth)
+}
+att()
+chama()
 
