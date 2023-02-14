@@ -217,7 +217,7 @@ body {
   position: absolute;
   width: 100%;
   height: 140%;
-  background: linear-gradient(var(--detail-color),var(--detail-color2));
+  background: linear-gradient(var(--detail-color), transparent);
   animation: animate 2s linear infinite;
 }
 
