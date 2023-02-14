@@ -282,7 +282,7 @@ body {
 }
 .titulo{
   color: var(--detail-color);
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 20px;
 }
 
@@ -561,7 +561,14 @@ div.rodape{
     z-index: 50000;
   }
 }
-
-.pag {
-  height: 100vh;
+.titulo03{
+  font-size: 2.5rem;
+  color: var(--detail-color);
+  border-bottom: #FF3A5E solid 2px;
+  padding: 8px;
+  margin-bottom: 40px;
 }
+
+/* .pag {
+  height: 100vh;
+} */
